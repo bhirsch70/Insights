@@ -13,7 +13,7 @@
 # Identifier: (CVE_2016_5696_kernel|KERNEL_CVE_2016_5696_URGENT,105,kernel)
 # Version: unknown
 - name: Update system to the latest kernel and reboot
-  hosts: "atc3.virt-network"
+  hosts: all
   become: true
   vars:
     # determine if we need to update the 'kernel' package or 'kernel-rt' package
